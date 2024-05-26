@@ -1,0 +1,125 @@
+.header{
+    width: 100%;
+    // background: saddlebrown;
+}
+
+.navbar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+.navbar__menus{
+display: flex;
+gap: 40px;
+color:  rgba(79, 86, 101, 1);
+}
+
+.navbar__item{
+font-size: 16px;
+}
+
+.navbar__item:hover{
+    cursor: pointer;
+    color: darkgoldenrod;
+}
+
+
+.signin{
+font-size: 16px;
+font-weight: 500;
+line-height: 18.96px;
+color:  rgba(11, 19, 42, 1);
+    &:hover{
+        cursor: pointer;
+        color: darkgoldenrod;
+    }
+
+}
+
+.navbar__btn{
+width: 150px;
+height: 45px;
+border-radius: 50px;
+border: 1px solid rgba(245, 56, 85, 1);
+font-size: 16px;
+font-weight: 700;
+line-height: 18.96px;
+color: rgba(245, 56, 85, 1);
+margin-left: 30px;
+transition: .5s;
+    &:hover{
+        cursor: pointer;
+        border: none;
+        background: green;
+        color: aliceblue;
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width:950px) {
+    .navbar__logo{
+        width: 85px;
+    }
+
+   .navbar__item{
+    font-size: 10px;
+   }
+    
+    .signin{
+        font-size: 12px;
+        
+    }
+    .navbar__btn{
+        width: 100px;
+        height: 25px;
+        font-size: 12px;
+    }
+}
+@media (max-width:700px) {
+    .navbar__logo{
+        width: 65px;
+    }
+
+   .navbar__item{
+    font-size: 8px;
+    // display: none;
+   }
+    
+    .signin{
+        font-size: 8px;
+        
+    }
+    .navbar__btn{
+        width: 75px;
+        height: 15px;
+        font-size: 8px;
+        justify-content: center;
+    }
+}
+@media (max-width:600px) {
+    .navbar__logo{
+        width: 65px;
+    }
+
+   .navbar__item{
+    // font-size: 8px;
+    display: none;
+   }
+    
+    .signin{
+        font-size: 8px;
+        
+    }
+    .navbar__btn{
+        width: 75px;
+        height: 15px;
+        font-size: 8px;
+        justify-content: center;
+    }
+}
+
+
+
+
